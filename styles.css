@@ -1,0 +1,136 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    
+            background: url('imagens/publick (7).jpeg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+            z-index: 1;
+        }
+        
+        header h1, header nav {
+            position: relative;
+            z-index: 2;
+        }
+        
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        header nav ul li {
+            display: inline;
+        }
+        
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+header img{
+    width: 160px; /*Alterar o tamanho da imagem do cabeçalho*/
+        }
+
+        .gallery h2{
+            margin-bottom: 32px;/* distancia do h2 entre as imagens abaixo*/
+            border-left: 5px solid rgb(240, 10, 10); /*a borda vermelha perto da lenta h2 */
+            padding-left: 8px;/* um espaçamento da borda e a letra h2*/
+                }
+        .gallery-row{
+            display: flex;/* as imagens ficarão uma ao lado da outra flex*/ 
+            flex-wrap: wrap;/* para quebrar linhas nas fotos, qando não chegar as outras imagens para baixo*/ 
+            gap: 24px;/* espaçamento entre as imagens de baixo para cima*/
+                }
+        .gallery-row div{
+            width: 200px;/* tamanho das div*/
+            flex: 1 1 250px;/* resposividade das imagens */
+                }
+        .gallery-row img{
+            width: 100px;/* tamanho das imagens ou fotos*/
+            border-radius: 8px; /*alterar as bordas das imagens fica uma curvas nas pontas das imagens*/
+            margin-bottom: 16px;
+                }
+        .gallery p{
+            font-weight: bolder;
+                }
+
+.hero {
+    background-color: #deb887;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.produtos {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.produtos .galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.sobre {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0e68c;
+}
+
+footer {
+    background-color: #8B4513;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+footer a{
+    color: rgb(240, 10, 10);
+    text-decoration: none; /*Tirando as sublinhas dos links a barra embaixo*/
+    transition: color 0.2s; /*a velocidade da mudança de cor nas palavras ou itens*/
+        }
+footer a:hover {
+    color: rgb(57, 6, 240);/* dar color quando passares o rato nos itens ou nas letras*/
+        }
